@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fredericka+the+Great&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@1,200&display=swap');
+
+@font-face {
+    font-family: 'Family';
+    src: url(Family\ Caligraphy.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Yuki';
+    src: url(Lavinia\ Personal\ Use.ttf) format(truetype);
+}
+
+:root {
+    --cor1: #000000;
+    --cor2: #000000;
+    --cor3: #5e2129;
+    --cor4: #5e2129;
+    --cor5: #64586e9f;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1),var(--cor2));
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    font-family: 'Fredericka the Great';
+    color: #dc143c;
+    font-size: 50px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 10px 0px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.452);
+}
+
+nav > a.coracao::before {
+    content: '\00A0\1F49C';
+    color: #dc143c;
+}
+
+nav > a.musica::before {
+    content: '\00A0\1F3B5';
+}
+
+nav > a.galeria::before {
+    content: '\00A0\🖼️';
+}
+
+nav > a {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+    font-size: 1.3em;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    transition-duration: .5s;
+    
+}
+
+nav > a:hover {
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
+    border-radius:  10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    background-color: white;
+    font-family: 'Fredericka the Great';
+    font-weight: normal;
+    font-size: 3em;
+    color: black;
+    text-align: center;
+}
+
+main p {
+    margin: 15px 0px;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 50px;
+    font-size: 1.4em;
+}
+.nome {
+    font-family: 'Lavinia', cursive;
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+.assinatura {
+    font-family: 'Lavinia', cursive;
+    font-size: 20px;
+    text-indent: 30px;
+}
+
+div.video {
+    background-color: var(--cor1);
+    margin: 0px -20px 7px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.ppg2 {
+    background-color:white ;
+    font-family: 'Mali';
+    font-size: 17px;
+    font-weight: bold;
+    text-indent: 30px;
+    text-align: center;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+aside {
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > h3 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+aside > h3::before {
+    content: '\00A0\1F914 ';
+    padding-right: 5px;
+}
+
+aside > ul {
+    list-style-type: '\🫶🏼\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: #5e2129;
+    color: #bfddf3;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* TELA DE PEDIDO*/
+
+main.pedido {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+}
+
+
+main.pedido > h1 {
+    background-color: var(--cor5);
+    color: white;
+    padding: 200px 10px 10px 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.pedido {
+    background-color: white;
+    border-radius:  10px;
+    box-shadow: 5px 5px 15px #522a3f;
+    width: 900px;
+    height: 920px;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.ftpedido {
+    background-color: var(--cor5);
+    color: var(--cor1);
+    text-align: center;
+    text-decoration: underline;
+    padding: 8px;
+}
+
+
+
+.btn-group .button {
+    display: flexbox;
+    background-color: var(--cor3);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px var(--cor4);
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    background-color: #8155A3;
+}
+
+.btn-group .button:active {
+    background-color: #8155A3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
